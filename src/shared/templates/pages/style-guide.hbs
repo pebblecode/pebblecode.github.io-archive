@@ -1,0 +1,114 @@
+---
+title: " | style-guide"
+---
+<div class="style-guide">
+<h2>logo</h2>
+  <div class="image-container">
+    <img src="img/logo.svg">
+    <span>img/logo.svg</span>
+  </div>
+
+<h2>colours</h2>
+<div class="clear-fix">
+  {{#each styleGuide.colors }}
+  <div class="left">
+    <div class="color-box" style="background: {{ this.hex }};"></div>
+    <span class="color-name">{{ this.name }}</span>
+    <span class="color-value">{{ this.hex }}</span>
+    <span class="color-value">{{{ this.rgb }}}</span>
+  </div> 
+  {{/each}}
+</div>
+
+<h2>typefaces</h2>
+  <div>
+    <span class="type-name">Museo Sans (300): body copy</span>
+    <div>
+      <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+      <span>abcdefghijklmnopqrstuvwxyz</span>
+      <span>,.?!'";:{}[]()-=_+0123456789@£$%&amp;*</span>
+    </div>
+
+    <span class="type-name">Museo Sans (700): standard headers</span>
+    <div style="font-weight: 700;">
+      <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+      <span>abcdefghijklmnopqrstuvwxyz</span>
+      <span>,.?!'";:{}[]()-=_+0123456789@£$%&amp;*</span>
+    </div>
+
+    <span class="type-name">Brandon Grotesque (900, italic, all caps): large call outs</span>
+    <div class="call-out" style="line-height: 1.5;">
+      <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+      <span>,.?!'";:{}[]()-=_+0123456789@£$%&amp;*</span>
+    </div>
+  </div>
+
+<h2>call outs</h2>
+  <span class="tera call-out">massive‚ boombastic‚ radical‚ &amp; extra special!</span>
+  <span class="tera call-out on-bg">nice‚ tastey‚ gnarley‚ wicked‚ &amp; a little naughty!</span>
+
+<h2>headers</h2>
+  <div class="headers">
+    <h1>Header One</h1>
+    <h2>Header Two</h2>
+    <h3>Header Three</h3>
+    <h4>Header Four</h4>
+    <h5>Header Five</h5>
+    <h6>Header Six</h6>
+  </div>
+
+<h2>paragraphs</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+  <p class="on-bg" style="font-weight: 700;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+
+<h2>links</h2>
+  <p>Lorem ipsum dolor sit amet, <a href="">consectetuer adipiscing elit</a>. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis <a href="">parturient montes</a>, nascetur ridiculus mus.</p>
+  <a href="" class="hover">link:hover</a>
+  <a href="" class="active">link:active</a>
+  <a href="" class="visited">link:visited</a>
+
+<h2>buttons</h2>
+  <button>button</button>
+  <button class="hover">button:hover</button>
+  <button class="active">button:active</button>
+  <button class="disabled">button:disabled</button>
+
+<h2>block quotes</h2>
+  <blockquote class="beta">
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  </blockquote>
+
+<h2>code snipets</h2>
+<pre><code>function buildTemplate ( template, data, element ) {
+  $.getJSON( data, function( json ) {
+    $( element ).append( JST[ template ] ( json ) );
+  });
+}
+</code></pre> 
+
+<h2>unordered lists</h2>
+  <ul class="text-list">
+    <li>List item one</li>
+    <li>List item two</li>
+      <ul class="text-list">
+        <li>List item two A</li>
+        <li>List item two B</li>
+      </ul>
+    <li>List item three</li>
+  </ul>
+
+<h2>ordered lists</h2>
+  <ol>
+    <li>List item one</li>
+    <li>List item two
+      <ol>
+        <li>List item two A</li>
+        <li>List item two B</li>
+      </ol>
+    </li>
+    <li>List item three</li>
+  </ol>

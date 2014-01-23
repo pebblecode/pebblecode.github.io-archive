@@ -1,0 +1,257 @@
+//===============================================================================
+// HOMEPAGE
+//===============================================================================
+.homepage-bg{
+  background-image: url('../img/homepage-bg.jpg');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.homepage-head{
+  background: which-pebble($code-head, $it-head);
+  padding: 50px 10px;
+  position: relative;
+  margin-top: $header-height-small;
+
+  h1,
+  h2 {
+    color: which-pebble($pc-pink, $it-blue);
+    margin: 0;
+    text-align: center;
+  }
+
+  h1{
+    font-size: 46px;
+    margin-bottom: 20px; 
+  }
+
+  h2{
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: 300;
+  }
+}
+
+.cta-container-small {
+
+  .block-1 {
+    display: block;
+    font-size: 32px;
+    line-height: 1.1;
+    color: white;
+    padding: 50px 20px 0;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    padding: 30px 20px 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .block-2 {
+    display: block;
+    background: which-pebble($code-head, $it-head);
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-family: "brandon-grotesque";
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+}
+
+.no-csstransforms3d .block-1::after,
+.no-csstransforms3d .block-2::after{
+  display: none;
+}
+
+
+.cta-container-large {
+    display: none;
+    margin: 180px auto;
+    width: 740px;
+    background: white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+
+    a{
+      text-decoration: none;
+      display: block;
+      overflow: hidden;
+
+      &:hover{
+        color: which-pebble($pc-pink, $it-blue);
+
+        .block-1::after,
+        .block-2::after{
+          @include vendor( transform, rotateY(0deg) );
+        } 
+      }
+    }
+
+    .block-1,
+    .block-2{
+      display: block;
+      font-size: 44px;
+      line-height: 1.2;
+      position: relative;
+    }
+
+    .block-1{
+      font-weight: 300;
+      padding: 50px 0 4px;
+      @include vendor( perspective, 1000px );
+
+      &::after{
+        background-image: which-pebble(url('../img/reach.svg'), url('../img/device-icons.svg'));
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: which-pebble( $code-head, darken( $it-head, 5 ) );
+
+        @include vendor( transform-origin, 0 50% );
+        @include vendor( transform, rotateY(180deg) );
+        @include vendor( transition, -prefix- transform .2s );
+      }
+    }
+
+    .block-2{
+      padding: 4px 0 50px;
+      @include vendor( perspective, 1000px );
+
+      &::after{
+        padding: 27px 0 0;
+        text-transform: uppercase;
+        font-family: "brandon-grotesque";
+        font-weight: 900;
+        font-style: italic;
+        content: attr(data-text);
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: which-pebble( $code-head, darken( $it-head, 5 ) );
+
+        @include vendor( transform-origin, 100% 50% );
+        @include vendor( transform, rotateY(-180deg) );
+        @include vendor( transition, -prefix- transform .2s );
+      }
+    }
+  }
+
+  .cta-help-outer {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .cta-help {
+    position: absolute;
+    background: which-pebble( $pc-pink, $it-blue );
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    pointer-events: auto;
+
+    @include vendor( transform, translateY( -100% ) );
+    @include vendor( transition, -prefix- transform .25s );
+
+    h4 {
+      color: white;
+      margin-top: 34px;
+    }
+
+    p {
+      color: white;
+      font-size: 23px;
+      padding: 0 10px;
+    }
+
+    &.active {
+      @include vendor( transform, translateY( 0 ) );
+    }
+  }
+
+  .cta-help-btn {
+    position: absolute;
+    background: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -15px;
+    right: -40px;
+    line-height: 31px;
+    text-indent: 2px;
+    font-size: 24px;
+    cursor: pointer;
+    color: which-pebble( $pc-pink ,$it-blue );
+    font-weight: 700;
+
+    &:before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      height: 34px;
+      width: 34px;
+      top: -3px;
+      left: -3px;
+      border: 1px solid transparent;
+
+      @include vendor( transition, border-color .25s );
+    }
+
+    &:hover:before,
+    &.active:before {
+      border-color: white;
+    }
+  }
+
+.testamonials-container {
+  background: $paper;
+  padding: 60px 20px;
+
+  li {
+    margin-bottom: 30px;
+  }
+
+  .text {
+    font-size: 24px;
+    margin-bottom: 0;
+    color: which-pebble($pc-pink, $it-blue);
+
+    &:before,
+    &:after {
+      content: "'";
+    }
+  }
+
+  span{
+    font-weight: 700;
+  }
+
+  .title {
+    font-weight: 300;
+  }
+}
