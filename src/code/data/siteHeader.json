@@ -1,8 +1,0 @@
-{ 
-  "sections": [
-    { "page": "work", "url": "work.html" },
-    { "page": "people", "url": "people.html"  },
-    { "page": "contact", "url": "contact.html"  },
-    { "page": "blog", "url": "http://pebblecodestaging.tumblr.com/"  }
-  ]
-}

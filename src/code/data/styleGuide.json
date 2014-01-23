@@ -1,8 +1,0 @@
-{
-  "colors": [
-    { "name": "$paper", "hex": "#FFF", "rgb": "R: 255 <br> G: 255 <br> B: 255" },
-    { "name": "$ink", "hex": "#6B7482", "rgb": "R: 107 <br> G: 116 <br> B: 130" },
-    { "name": "$pc-pink", "hex": "#EE5080", "rgb": "R: 238 <br> G: 80 <br> B: 128" },
-    { "name": "$alternate", "hex": "#3A5273", "rgb":"R: 58 <br> G: 82 <br> B: 115" }
-  ] 
-}
