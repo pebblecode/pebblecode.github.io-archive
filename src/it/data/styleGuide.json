@@ -1,0 +1,8 @@
+{
+  "logo": "img/it-logo.svg",
+  "colors": [
+    {"name": "$paper", "value": "#FFF"},
+    {"name": "$ink", "value": "#6B7482"},
+    {"name": "$it-blue", "value": "#0099E6"}
+  ] 
+}

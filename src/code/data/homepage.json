@@ -1,0 +1,30 @@
+{
+  "headline": "We build bombproof software that is a joy to use",
+  "sub-head": "We get our kicks from solving most complex business problems out there. The harder the better.",
+  "cta-1": "Take your first step along The Pebble Way today",
+  "cta-2": "Book your Hack Day with us here",
+  "cta-3": "Book A Hack Day",
+  "cta-help-header": "What are Hack Days?",
+  "cta-help-text": "Hack Days allow your best brains and ours to spend a day working together on your most pressing problems, generating loads of ideas and turning your favourites into a working prototypes THAT DAY.",
+  "cta-link": "mailto:info@pebblecode.com?subject=Book a hack day",
+  "testimonials": [
+    {
+      "text": "pebble has always delivered fantastic results. I couldn't recommend them highly enough",
+      "client": "Michael Brady",
+      "title": ", CEO ,",
+      "company": "Bede Gaming"
+    },
+    {
+      "text": "I would not hesitate to recommend their services",
+      "client": "Geoff Wheeler",
+      "title": ", Managing Director ,",
+      "company": "RecoAuto Limited"
+    },
+    {
+      "text": "When I need work done I will only have one name in mind",
+      "client": "James Tuckett",
+      "title": ", Managing Director, Co-founder ,",
+      "company": "Up Investments"
+    }
+  ]
+}
