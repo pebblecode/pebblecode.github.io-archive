@@ -28,7 +28,8 @@
     nbevans: "Nathan Evans",
     andypebble: "Andy Wardle",
     svnlto: "Sven Lito",
-    serbio666: "Fergus Hynd"
+    serbio666: "Fergus Hynd",
+    johnmildinhall: "John Mildinhall"
   };
 
   // Link authors to their relevant people page
