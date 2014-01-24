@@ -1,0 +1,55 @@
+---
+title: 
+---
+<div class="homepage-bg"></div>
+<header class="homepage-head">
+  <h1 class="call-out">{{ homepage.headline }}</h1>
+  <h2>{{ homepage.sub-head }}</h2>
+</header>
+
+<div class="cta-container-small">
+  <span class="block-1">
+    {{ homepage.cta-1 }}
+    {{#if homepage.cta-1a }}
+      <br>{{ homepage.cta-1a }}s
+    {{/if}}
+  </span>
+  <a href="{{ homepage.cta-link }}" target="_blank"> 
+    <span class="block-2" data-text="{{ homepage.cta-3 }}">{{ homepage.cta-2 }}</span>
+  </a>
+</div>
+
+<div class="cta-container-large">
+  <a href="{{ homepage.cta-link }}" target="_blank">
+    <span class="block-1">
+      {{ homepage.cta-1 }}
+      {{#if homepage.cta-1a }}
+        <br>{{ homepage.cta-1a }}s
+      {{/if}}
+    </span>
+    <span class="block-2" data-text="{{ homepage.cta-3 }}">{{ homepage.cta-2 }}</span>
+  </a>
+  {{#if homepage.cta-help-text }}
+    <div class="cta-help-outer">
+      <div class="cta-help">
+        <h4 class="mega">{{ homepage.cta-help-header }}</h4>
+        <p>{{ homepage.cta-help-text }}</p>
+      </div>
+    </div>
+  {{/if}}
+  <span class="cta-help-btn">?</span>
+</div>
+
+<div class="testamonials-container">
+  <ul>
+    {{#each homepage.testimonials }}
+      <li>
+        <p class="text call-out">{{{ text }}}</p>
+        <span class="client">{{ client }}</span>
+        <span class="title">{{ title }}</span>
+        <span class="company">{{ company }}</span>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+{{!-- <span class="theres-more">&#9660;</span> --}}
