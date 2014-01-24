@@ -1,17 +1,6 @@
 //===============================================================================
 // MIXINS
 //===============================================================================
-// 1st value is for {code} site 2nd is for .it site
-@function which-pebble ( $value1, $value2 ) {
-  @if $which-pebble == code{
-    @return $value1;
-  }
-
-  @else {
-    @return $value2;
-  }
-}
-
 @mixin border-radius($radius) { 
   -ms-border-radius: $radius;
   -moz-border-radius: $radius;

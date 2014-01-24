@@ -78,19 +78,19 @@
   }
 
   .color-1 {
-    background-color: which-pebble( $pc-pink, $it-blue );
+    background-color: $pc-pink;
   }
 
   .color-2 {
-    background-color: which-pebble( lighten( $pc-pink, 7.5 ) ,lighten( $it-blue, 7.5 ) ); 
+    background-color: lighten( $pc-pink, 7.5 ); 
   }
 
   .color-3 {
-    background-color: which-pebble( lighten( $pc-pink, 15 ) ,lighten( $it-blue, 15 ) ); 
+    background-color: lighten( $pc-pink, 15 ); 
   }
 
   .color-4 {
-    background-color: which-pebble( lighten( $pc-pink, 22.5 ) ,lighten( $it-blue, 22.5 ) ); 
+    background-color: lighten( $pc-pink, 22.5 ); 
   }
 
   .vertical {
@@ -245,7 +245,7 @@
         height: $header-height-large;
         line-height: $header-height-large;
         text-align: center;
-        background: which-pebble($pc-pink, $it-blue);
+        background: $pc-pink;
         color: white;
         width: 100%;
 
@@ -256,13 +256,13 @@
 
       &:hover{
         &::after{
-          background: which-pebble(darken($pc-pink, 25), darken($it-blue, 15));
+          background: darken($pc-pink, 25);
 
           @include vendor( transform, rotateX( -90deg ) );
         }
         span{
           @include vendor( transform, rotateX( 0deg ) );
-          background: which-pebble(saturate(lighten($pc-pink, 7.5), 100), lighten($it-blue, 5));
+          background: saturate(lighten($pc-pink, 7.5), 100);
         }
       }
     }
@@ -276,7 +276,7 @@
       font-weight: 700;
       padding: 0 12px;
       display: inline-block;
-      background: which-pebble($pc-pink, $it-blue);
+      background: $pc-pink;
 
       @include vendor( transform-origin, 50% 100% );
       @include vendor( transform, rotateX( -90deg ) );
@@ -436,7 +436,7 @@
     .text {
       font-size: 70px;
       margin-bottom: 0;
-      color: which-pebble($pc-pink, $it-blue);
+      color: $pc-pink;
       text-indent: -13px;
 
       &:before,

@@ -89,19 +89,19 @@
 }
 
 .color-1 {
-  background-color: which-pebble( $pc-pink, $it-blue );
+  background-color: $pc-pink;
 }
 
 .color-2 {
-  background-color: which-pebble( lighten( $pc-pink, 7.5 ) ,lighten( $it-blue, 7.5 ) ); 
+  background-color: lighten( $pc-pink, 7.5 ); 
 }
 
 .color-3 {
-  background-color: which-pebble( lighten( $pc-pink, 15 ) ,lighten( $it-blue, 15 ) ); 
+  background-color: lighten( $pc-pink, 15 ); 
 }
 
 .color-4 {
-  background-color: which-pebble( lighten( $pc-pink, 22.5 ) ,lighten( $it-blue, 22.5 ) ); 
+  background-color: lighten( $pc-pink, 22.5 ); 
 }
 
 .vertical {

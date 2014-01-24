@@ -70,30 +70,30 @@ dd{
 }
 
 a{
-  color: which-pebble($pc-pink, $it-blue);
+  color: $pc-pink;
   font-weight: 700;
 
   &:hover,
   &.hover{
-    color: which-pebble( darken($pc-pink, 15), darken($it-blue, 15) );  
+    color: darken($pc-pink, 15);
   }
 
   &:active,
   &.active{
-    color: which-pebble( darken($pc-pink, 30), darken($it-blue, 30) );
+    color: darken($pc-pink, 30);
   }
 
   // commented out for development
   // &:visited,
   &.visited{
-    color: which-pebble( lighten($pc-pink, 15), lighten($it-blue, 15) );
+    color: lighten($pc-pink, 15);
   }
 }
 
 blockquote{
   margin: 0;
   padding: 0 20px;
-  border-left: 2px solid which-pebble($pc-pink, $it-blue);
+  border-left: 2px solid $pc-pink;
   font-style: italic;
 
   p:before{
@@ -141,7 +141,7 @@ input[type="submit"]{
   padding: 10px 14px;
   text-transform: uppercase;
   border: 0;
-  background-color: which-pebble($pc-pink, $it-blue);
+  background-color: $pc-pink;
   color: $paper;
   text-decoration: none;
   font-weight: 700;
@@ -149,12 +149,12 @@ input[type="submit"]{
 
   &:hover,
   &.hover{
-    background-color: which-pebble( darken($pc-pink, 15), darken($it-blue, 15) );
+    background-color: darken($pc-pink, 15);
   }
 
   &:active,
   &.active{
-    background-color: which-pebble( darken($pc-pink, 30), darken($it-blue, 30) );
+    background-color: darken($pc-pink, 30);
   }
 
   &.disabled{
@@ -165,7 +165,7 @@ input[type="submit"]{
 
 table{
   width: 100%;
-  border: 1px solid which-pebble( $pc-pink, $it-blue );
+  border: 1px solid $pc-pink;
 }
 
 thead{
@@ -174,11 +174,11 @@ thead{
 
 tr{
   border-bottom: 1px solid darken($paper, 10);
-  border-left: 1px solid which-pebble( $pc-pink, $it-blue );
-  border-right: 1px solid which-pebble( $pc-pink, $it-blue );
+  border-left: 1px solid $pc-pink;
+  border-right: 1px solid $pc-pink;
 
   &:nth-child(odd){
-    background-color: which-pebble( lighten($pc-pink, 35), lighten($it-blue, 35) );
+    background-color: lighten($pc-pink, 35);
   }
 
   &:last-child{
@@ -188,7 +188,7 @@ tr{
 
 th{
   padding: 2px 8px;
-  background-color: which-pebble( $pc-pink, $it-blue );
+  background-color: $pc-pink;
   color: $paper;
 }
 
