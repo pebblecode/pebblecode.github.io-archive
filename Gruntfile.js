@@ -130,7 +130,7 @@ module.exports = function ( grunt ) {
         tasks: [ 'copy:images' ]
       },
     },
-
+    
     'gh-pages': {
       options: {
         base: 'dist'
