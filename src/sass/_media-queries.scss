@@ -293,9 +293,12 @@
   } // end .site-nav
 
   // header offset for larger screens
-  .homepage-head,
-  .wrap {
+  .homepage-head {
     margin-top: $header-height-large;
+  }
+
+  .wrap {
+    margin-top: ($header-height-large + 10);
   }
 
   .people {
@@ -457,8 +460,6 @@
 
   // work
   //===============================================================================
-
-  
 }
 
 @media all and (min-width: 950px) {

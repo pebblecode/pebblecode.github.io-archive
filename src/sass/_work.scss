@@ -3,7 +3,7 @@
 //===============================================================================
 .wrap {
   width: 100%;
-  margin: $header-height-small auto 0;
+  margin: ($header-height-small + 10) auto 0;
   padding-bottom: $footer-height;
 
   section {
@@ -31,10 +31,13 @@
   }
 
   img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 20px;
 
     &:last-child {
-      margin-bottom: 20px;
+      
     }
   }
 
@@ -87,7 +90,6 @@
 
 img.small {
   width: 66.6666%;
-  margin-left: 16.6666% 
 }
 
 .az-search-before {
