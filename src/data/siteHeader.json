@@ -1,8 +1,8 @@
 { 
   "sections": [
-    { "page": "work", "url": "work.html" },
-    { "page": "people", "url": "people.html" },
-    { "page": "contact", "url": "contact.html" },
-    { "page": "blog", "url": "http://blog.pebblecode.com" }
+    { "page": "work", "url": "/work" },
+    { "page": "people", "url": "/people" },
+    { "page": "contact", "url": "/contact" },
+    { "page": "blog", "url": "http://blog.pebblecode.com/" }
   ]
 }
