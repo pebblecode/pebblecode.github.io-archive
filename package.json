@@ -1,5 +1,6 @@
 {
   "name": "pebble-sites",
+  "repository": "https://github.com/pebblecode/pebblecode.github.io",
   "version": "0.0.1",
   "dependencies": {
     "grunt": "~0.4.1",
