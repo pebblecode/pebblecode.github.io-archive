@@ -4,30 +4,32 @@
 .wrap {
   width: 100%;
   margin: ($header-height-small + 10) auto 0;
-  padding-bottom: $footer-height;
+  padding-bottom: $footer-height;  
+}
 
-  section {
-    padding: 20px 8% 1px;
-    color: white;
-    position: relative;
+.case-study {
+  padding: 20px 8% 1px;
+  color: white;
+  position: relative;
+  overflow: hidden;
 
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 4.5%;
-      top: 0;
-      background-size: 100%;
-    }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4.5%;
+    max-width: 20px;
+    top: 0;
+    background-size: 100%;
+  }
 
-    &::before {
-      left: 0;
-    }
+  &::before {
+    left: 0;
+  }
 
-    &::after {
-      right: 0;
-    }
+  &::after {
+    right: 0;
   }
 
   img {
@@ -35,10 +37,6 @@
     max-width: 300px;
     display: block;
     margin: 0 auto 20px;
-
-    &:last-child {
-      
-    }
   }
 
   h2,
@@ -92,8 +90,44 @@ img.small {
   width: 66.6666%;
 }
 
+@media all and (min-width: 600px) {
+  img.titanic,
+  img.cloud,
+  img.inovation,
+  img.robot {
+    position: relative;
+    z-index: 2;
+  }
+
+  img.hand,
+  img.pyramid,
+  img.trophy,
+  img.flexible {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.175;
+    bottom: -35%;
+    
+    height: 100%;
+    max-width: 100%;
+  }
+
+  img.hand,
+  img.trophy {
+    right: -15%;
+  }
+
+  img.pyramid,
+  img.inovation,
+  img.flexible { 
+    left: -25%;
+  }
+}
+
+
 .az-search-before {
   background-color: $pc-aqua;
+  padding-top: 40px;
 
   &::before {
     background-image: url( '../img/left-1.svg' );
@@ -106,6 +140,7 @@ img.small {
 
 .az-search-after {
   background-color: darken($pc-aqua, 5);
+  padding-bottom: 40px;
 
   &::before {
     background-image: url( '../img/left-2.svg' );
@@ -117,6 +152,7 @@ img.small {
 }
 
 .az-inno-before {
+  padding-top: 40px;
   background-color: $pc-blue;
 
   &::before {
@@ -129,6 +165,7 @@ img.small {
 }
 
 .az-inno-after {
+  padding-bottom: 40px;
   background-color: darken($pc-blue, 5);
 
   &::before {
@@ -142,6 +179,7 @@ img.small {
 
 .reco-before {
   background-color: $pc-orange;
+  padding-top: 40px;
 
   &::before {
     background-image: url( '../img/left-1.svg' );
@@ -154,6 +192,7 @@ img.small {
 
 .reco-after {
   background-color: darken($pc-orange, 5);
+  padding-bottom: 40px;
 
   &::before {
     background-image: url( '../img/left-2.svg' );
@@ -166,6 +205,7 @@ img.small {
 
 .bede-before {
   background-color: $pc-purple;
+  padding-top: 40px;
 
   &::before {
     background-image: url( '../img/left-4.svg' );
@@ -178,6 +218,7 @@ img.small {
 
 .bede-after {
   background-color: darken($pc-purple, 5);
+  padding-bottom: 40px;
 
   &::before {
     background-image: url( '../img/left-3.svg' );
