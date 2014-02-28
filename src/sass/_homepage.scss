@@ -35,6 +35,16 @@
     line-height: 1.1;
     font-weight: 300;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -22px;
+    height: 22px;
+    width: 100%;
+    background: url("../img/homepage-head.svg");
+    left: 0;
+  }
 }
 
 .cta-container-small {
@@ -84,6 +94,8 @@
     text-align: center;
     position: relative;
 
+    @include vendor( transform, rotate( 1deg ) );
+
     a{
       text-decoration: none;
       display: block;
@@ -120,7 +132,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        bottom: 0;
+        bottom: -1%;
         right: 0;
         background-color: $code-head;
 
@@ -231,6 +243,17 @@
 .testamonials-container {
   background: $paper;
   padding: 60px 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    height: 12px;
+    width: 100%;
+    background: url("../img/testamonials.svg");
+    left: 0;
+  }
 
   li {
     margin-bottom: 30px;
