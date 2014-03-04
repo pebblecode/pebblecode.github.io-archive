@@ -139,6 +139,26 @@
       "name": "Nancy Lee",
       "title": "UI/UX Designer",
       "image": "nancy.png"
+    },
+    {
+      "name": "Tane Piper",
+      "title": "Software Developer",
+      "image": "tane.png"
+    },
+    {
+      "name": "Okash Khawaja",
+      "title": "Software Developer",
+      "image": "okash.png"
+    },
+    {
+      "name": "Saverio Castelli",
+      "title": "Software Developer",
+      "image": "saverio.png"
+    },
+    {
+      "name": "Lizzie Mead",
+      "title": "Bookkeeper",
+      "image": "lizzie.png"
     }
   ],
   "copy-1": "<p>Our method is simple: We hire the people we think are the best out there in their area of expertise.</p>",
