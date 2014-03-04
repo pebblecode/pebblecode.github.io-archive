@@ -121,7 +121,7 @@
 
     .block-1{
       font-weight: 300;
-      padding: 50px 0 4px;
+      padding: 50px 10px 4px;
       @include vendor( perspective, 1000px );
 
       &::after{
@@ -143,7 +143,7 @@
     }
 
     .block-2{
-      padding: 4px 0 50px;
+      padding: 4px 10px 50px;
       @include vendor( perspective, 1000px );
 
       &::after{
