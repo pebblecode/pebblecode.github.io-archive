@@ -121,7 +121,7 @@ module.exports = function ( grunt ) {
       },
       // Watch for javascript changes. Run JShint & copy to dist
       js: {
-        files: [ 'Gruntfile.js', 'srcjs/*.js', '!src/js/*.min.js' ],
+        files: [ 'Gruntfile.js', 'src/js/*.js', '!src/js/*.min.js' ],
         tasks: [ 'jshint', 'uglify', 'copy:scripts']
       },
       // watch for changes to images. Copy to dist

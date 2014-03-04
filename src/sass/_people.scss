@@ -4,3 +4,176 @@
 .no-mq .people {
   top: $header-height-large;
 }
+
+.ppl-wrap {
+  margin: $header-height-small 0 100px;
+}
+
+.ppl-outer  {
+  float: left;
+  width: 100%;
+  padding-bottom: 125%;
+  position: relative;
+
+  @media ( min-width: 640px ) {
+    width: 50%;
+    padding-bottom: 62.5%;
+  }
+
+  @media ( min-width: 960px ) {
+    width: 33.3333%;
+    padding-bottom: 41.6666%;
+  }
+
+  @media ( min-width: 1280px ) {
+    width: 25%;
+    padding-bottom: 31.25%;
+  }
+}
+
+.ppl-block-1 {
+
+  .vertical {
+    left: 50%;
+  }
+
+  .horizontal {
+    top: 60%;
+
+    .person-text {
+      left: 50%;
+    }
+  }
+
+}
+
+.ppl-block-2 .horizontal { top: 60%; }
+.ppl-block-2 .horizontal .mugshot { left: 50%; }
+
+.ppl-block-3 .horizontal .mugshot { left: 50%; }
+.ppl-block-3 .vertical { top: 40%; }  
+
+.ppl-block-4 .horizontal .person-text { left: 50%; }
+.ppl-block-4 .vertical {
+  top: 40%;
+  left: 50%;
+}
+
+.ppl-block-5 {
+
+  .horizontal {
+    top: 60%;
+
+    .mugshot {
+      left: 50%;
+    }
+  }
+
+  .vertical:nth-child(odd) {
+    left: 50%;
+  }
+}
+
+.ppl-block-6 {
+
+  .horizontal .person-text {
+    left: 50%;
+  }
+
+  .vertical {
+    top: 40%;
+
+    &:nth-child(odd) {
+      left: 50%;
+    }
+  }
+}
+
+.ppl-block-7 .horizontal { top: 60%; }
+.ppl-block-7 .mugshot { left: 50%; }
+
+.ppl-block-8 .person-text { left: 50%; }
+.ppl-block-8 .ppl-text { top: 40%; }
+
+.person  {
+  position: absolute;
+  color: white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &::before {
+    background-image: url( '../img/side-1.svg' );
+    background-position: 100% 0;
+  }
+
+  &::after {
+    background-image: url( '../img/side-2.svg' );
+    background-position: 0 99%;
+  }
+}
+
+.ppl-c-1{ background-color: $pc-pink }
+.ppl-c-2{ background-color: $pc-blue }
+.ppl-c-3{ background-color: $pc-green }
+.ppl-c-4{ background-color: $pc-orange }
+.ppl-c-5{ background-color: $pc-purple }
+.ppl-c-6{ background-color: $pc-aqua }
+
+.vertical {
+  width: 50%;
+  padding-bottom: 75%;
+
+  .person-text {
+    width: 100%;
+    top: 16.6666%;;
+  }
+}
+
+.horizontal {
+  width: 100%;
+  padding-bottom: 50%;
+
+  .mugshot {
+    width: 50%;
+  }  
+
+  .person-text {
+    width: 50%;
+    top: 50%;
+  }
+}
+
+.person-text {
+  text-align: center;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+}
+
+.person-name {
+  font-weight: bold;
+  display: block;
+}
+
+.person-title {
+
+}
+
+.mugshot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.ppl-text {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 75%;
+}

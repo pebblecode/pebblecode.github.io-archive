@@ -6,6 +6,7 @@ $(document).ready(function () {
       navBtn = $(' .nav-btn'),
       siteHeader = $('.site-header'),
       contactPanel = $('.contact-panel'),
+      colorMe = $('.person, .ppl-text'),
       helpPanel = $('.cta-help-btn, .cta-help');
 
   navBtn.click(function () {
@@ -51,6 +52,13 @@ $(document).ready(function () {
 
   $('#map-canvas, .site-header').click(function () {
     contactPanel.removeClass( 'active' );
+  });
+
+  // people page
+  // var colorClasses = ['ppl-c-1', 'ppl-c-2', 'ppl-c-3', 'ppl-c-4'];
+
+  colorMe.each( function () {
+    $( this ).addClass( 'ppl-c-' + [ Math.floor( Math.random() * 6 ) + 1 ] );
   });
 
   // browser stuffs
