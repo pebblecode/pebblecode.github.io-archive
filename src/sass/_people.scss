@@ -6,7 +6,7 @@
 }
 
 .ppl-wrap {
-  margin: $header-height-small 0 100px;
+  margin: $header-height-small + 20 0 100px;
 }
 
 .ppl-outer  {
@@ -98,7 +98,10 @@
 .person  {
   position: absolute;
   color: white;
+}
 
+.person,
+.ppl-text {
   &::before,
   &::after {
     content: "";
@@ -110,22 +113,85 @@
   }
 
   &::before {
-    background-image: url( '../img/side-1.svg' );
     background-position: 100% 0;
   }
 
   &::after {
-    background-image: url( '../img/side-2.svg' );
     background-position: 0 99%;
   }
 }
 
-.ppl-c-1{ background-color: $pc-pink }
-.ppl-c-2{ background-color: $pc-blue }
-.ppl-c-3{ background-color: $pc-green }
-.ppl-c-4{ background-color: $pc-orange }
-.ppl-c-5{ background-color: $pc-purple }
-.ppl-c-6{ background-color: $pc-aqua }
+.ppl-c-1{ 
+  background-color: lighten( $pc-pink, 5 );
+
+  &::before {
+    background-image: url( '../img/side-1.svg' );
+  }
+
+  &::after {
+    background-image: url( '../img/side-2.svg' );
+  }
+}
+
+.ppl-c-2{ 
+  background-color: lighten( $pc-pink, 10 );
+
+  &::before {
+    background-image: url( '../img/side-3.svg' );
+  }
+
+  &::after {
+    background-image: url( '../img/side-4.svg' );
+  }
+}
+
+.ppl-c-3{ 
+  background-color: lighten( $pc-pink, 15 );
+
+  &::before {
+    background-image: url( '../img/side-5.svg' );
+  }
+
+  &::after {
+    background-image: url( '../img/side-6.svg' );
+  }
+}
+
+.ppl-c-4{ 
+  background-color: lighten( $pc-pink, 7.5 );
+
+  &::before {
+    background-image: url( '../img/side-1.svg' );
+  }
+
+  &::after {
+    background-image: url( '../img/side-6.svg' );
+  }
+}
+
+.ppl-c-5{ 
+  background-color: lighten( $pc-pink, 12.5 );
+
+  &::before {
+    background-image: url( '../img/side-3.svg' );
+  }
+
+  &::after {
+    background-image: url( '../img/side-2.svg' );
+  }
+}
+
+.ppl-c-6{ 
+  background-color: lighten( $pc-pink, 2.5 );
+
+  &::before {
+    background-image: url( '../img/side-5.svg' );
+  }
+
+  &::after {
+    background-image: url( '../img/side-4.svg' );
+  }
+}
 
 .vertical {
   width: 50%;
