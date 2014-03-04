@@ -5,19 +5,11 @@ $(document).ready(function () {
   var homepageHead = $( '.homepage-head' ),
       navBtn = $(' .nav-btn'),
       siteHeader = $('.site-header'),
-      people = $( '.people' ),
-      blank = $( '.blank' ),
-      person = $( '.person' ),
-      smallSquare = $('.small-square'),
-      largeSquare = $('.large-square'),
-      vertical = $('.vertical'),
-      horizontal = $('.horizontal'),
       contactPanel = $('.contact-panel'),
       helpPanel = $('.cta-help-btn, .cta-help');
 
   navBtn.click(function () {
     siteHeader.toggleClass('expanded');
-
   });
 
   $(window).scroll(function () {
@@ -61,63 +53,6 @@ $(document).ready(function () {
     contactPanel.removeClass( 'active' );
   });
 
-  // people page stuff
-  var peopleColumns = 6;
-  var colorClasses = ['color-1', 'color-2', 'color-3', 'color-4'];
-
-  function respond() {
-    var windowWidth = $(window).width();
-    if (windowWidth < 1000 && windowWidth > 800) {
-      peopleColumns = 5;
-    } else if (windowWidth <= 800 && windowWidth > 600) {
-      peopleColumns = 4;
-    } else if (windowWidth <= 600 && windowWidth > 400) {
-      peopleColumns = 3;
-    } else if (windowWidth <= 400) {
-      peopleColumns = 2;
-      horizontal.add( vertical ).removeClass('horizontal vertical').addClass('small-square');
-      horizontal = $( '.horizontal' );
-      vertical = $( '.vertical' );
-      smallSquare = $( '.small-square' );
-    }
-  }
-
-  respond();
-
-  peopleSize = function () {
-    var unit = Math.floor($(window).innerWidth() / peopleColumns);
-    smallSquare.height(unit).width(unit);
-    blank.height(unit).width(unit);
-    largeSquare.height(unit * 2).width(unit * 2);
-    vertical.height(unit * 2).width(unit);
-    horizontal.height(unit).width(unit * 2);
-  };
-
-  peopleSize();
-
-  $(function () {
-    var container = people;
-    container.masonry({
-      itemSelector: '.person',
-      isResizeBound: false
-    });
-
-    $(window).resize(function ( event ) {
-      people.addClass('hide');
-      respond();
-      peopleSize();
-      container.masonry();
-    });
-
-    container.masonry('on', 'layoutComplete', function () {
-      people.removeClass('hide');
-    });
-  });
-
-  person.each(function () {
-    $( this ).addClass(colorClasses[Math.floor(Math.random() * 4) + 0]);
-  });
-
   // browser stuffs
   if ( !Modernizr.svg ) {
     $('img[src*="svg"]').attr('src', function() {
@@ -128,9 +63,5 @@ $(document).ready(function () {
   if( !Modernizr.mq( 'only all' ) ) {
     $( 'html' ).addClass( 'no-mq' );
   }
-
-  $( '.people-cta' ).click( function() {
-    window.open("http://pebblecode.mytribehr.com/careers", '_blank');
-  });
 
 });
