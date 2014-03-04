@@ -7,6 +7,10 @@
 
 .ppl-wrap {
   margin: $header-height-small + 10 0 100px;
+
+  @media ( min-width: 600px ) {
+    margin: $header-height-large + 10 0 100px;
+  }
 }
 
 .ppl-outer  {
@@ -221,6 +225,9 @@
   text-align: center;
   position: absolute;
   -webkit-transform: translateY(-50%);
+  padding: 0 5%;
+  line-height: 1.1;
+  font-size: 16px;
 }
 
 .person-name {
