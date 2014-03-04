@@ -1,142 +1,13 @@
 //===============================================================================
 // MEDIA-QUERIES
 //===============================================================================
-// people
-//===============================================================================
 @media all and (min-width: 450px) {
-  .blank {
-    display: block;
-  }
-
   .address.tera,
   .phone-email.tera{
     font-size: 34px;
   }
-
-  .people {
-    position: relative;
-    overflow: hidden;
-    transition: opacity .25s;
-    margin-bottom: 70px;
-
-    .name,
-    .title{
-      display: block;
-      text-align: center;
-      line-height: 1;
-    }
-
-    .name{
-      font-weight: 700;
-      margin-top: 8px;
-    }
-
-    img{
-      width: 84%;
-    }
-
-    .person{
-      overflow: hidden;
-    }
-
-    &.hide {
-      opacity: 0;
-    }
-  }
-
-  .vertical,
-  .horizontal,
-  .small-square,
-  .large-square {
-    position: relative;
-    color: white;
-
-    &:before{
-      pointer-events:none;
-    }
-
-    &:before,
-    &:after {
-      position: absolute;
-      // background-size: 100% 100%;
-      background-repeat: no-repeat;
-      content: "";
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 3;
-    }
-
-    &:after {
-      border: 1px solid white;
-    }
-
-    .name {
-      margin-top: 25px;
-    }
-  }
-
-  .color-1 {
-    background-color: $pc-pink;
-  }
-
-  .color-2 {
-    background-color: lighten( $pc-pink, 7.5 ); 
-  }
-
-  .color-3 {
-    background-color: lighten( $pc-pink, 15 ); 
-  }
-
-  .color-4 {
-    background-color: lighten( $pc-pink, 22.5 ); 
-  }
-
-  .vertical {
-    &:before{
-      background-image: url( '../img/vertical.svg' );  
-    }
-
-    img{
-      width: 180%;
-    }
-  }
-
-  .horizontal {
-    &:before {
-      background-image: url( '../img/horizontal.svg' );  
-    }
-
-    img{
-      width: 50%;
-      position: relative;
-      top: -40px;
-    }
-
-    .name,
-    .title{
-      text-align: right;
-      margin-right: 25px;
-    }
-  }
-
-  .small-square {
-    &:before { 
-      background-image: url( '../img/small-square-1.svg' );
-    }
-
-    &:nth-child(odd):before {
-      background-image: url( '../img/small-square-2.svg' );    
-    }
-  }
-
-  .large-square {
-    &:before { 
-      background-image: url( '../img/large-square.svg' );
-    }
-  }
 }
+  
 
 // Navigation media query
 @media all and (min-width: 600px) {
@@ -299,10 +170,6 @@
 
   .wrap {
     margin-top: ($header-height-large + 10);
-  }
-
-  .people {
-    top: $header-height-large;
   }
 
   // footer
