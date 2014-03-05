@@ -14,6 +14,7 @@
 }
 
 .ppl-outer  {
+  color: white;
   float: left;
   width: 100%;
   padding-bottom: 125%;
@@ -101,7 +102,6 @@
 
 .person  {
   position: absolute;
-  color: white;
 }
 
 .person,
@@ -249,4 +249,34 @@
   position: absolute;
   width: 100%;
   padding-bottom: 75%;
+  background-color: $pc-pink;
+
+  p {
+    font-size: 20px;
+    line-height: 1.1;
+    position: absolute;
+    margin: 0;
+    padding: 0 5%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+  }
+}
+
+.ppl-cta {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  text-align: center;
+
+  h3 {
+    color: white;
+    margin-bottom: 0;
+    font-size: 60px;
+  }    
+}
+
+
+.ppl-cta-link:hover .ppl-text{
+  background-color: darken( $pc-pink, 5 );
 }
