@@ -5,10 +5,24 @@
   padding-top: $header-height-small;
   width: 90%;
   margin: 100px auto;
+  position: relative;
+}
+
+.az-video-canvas {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
 }
 
 .az-video {
-  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
   background-image: url( '../img/play.svg' );
   background-repeat: no-repeat;
   background-position: 50%;

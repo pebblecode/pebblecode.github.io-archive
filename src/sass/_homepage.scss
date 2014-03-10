@@ -36,14 +36,16 @@
     font-weight: 300;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -22px;
-    height: 22px;
-    width: 100%;
-    background: url("../img/homepage-head.svg");
-    left: 0;
+  @media ( min-width: 1024px ) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -22px;
+      height: 22px;
+      width: 100%;
+      background: url("../img/homepage-head.svg");
+      left: 0;
+    }
   }
 }
 
@@ -94,7 +96,9 @@
     text-align: center;
     position: relative;
 
-    @include vendor( transform, rotate( 1deg ) );
+    @media ( min-width: 1024px ) {
+      @include vendor( transform, rotate( 1deg ) );
+    }
 
     a{
       text-decoration: none;
@@ -245,14 +249,16 @@
   padding: 60px 20px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -12px;
-    height: 12px;
-    width: 100%;
-    background: url("../img/testamonials.svg");
-    left: 0;
+  @media ( min-width: 1024px ) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -12px;
+      height: 12px;
+      width: 100%;
+      background: url("../img/testamonials.svg");
+      left: 0;
+    }
   }
 
   li {
