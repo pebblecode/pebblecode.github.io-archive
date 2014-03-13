@@ -14,6 +14,39 @@
     </script>
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/vendor/modernizr.custom.min.js"></script>
+
+    <!--[if lt IE 9]>
+  <style type="text/css">
+    .site-logo {
+      padding: 0;
+      width: 226px;
+      height: 60px;
+    }
+  </style>
+<![endif]-->
+
+    <!--[if lt IE 9]>
+  <style type="text/css">
+    .no-mq .site-logo {
+      margin: 14px 0 10px
+      padding: 0;
+      width: 200px;
+      height: 36px;
+    }
+  </style>
+<![endif]-->
+
+    <!--[if lte IE 7]>
+  <style type="text/css">
+    body { 
+      padding-top: 80px;
+      overflow-x:hidden;
+    }
+    .site-nav {
+      margin-right: 40px;
+    }
+  </style>
+<![endif]-->
   </head>
   <body>
     <header class="site-header clear-fix">
@@ -48,9 +81,28 @@
       <div class="site-menu"></div>
     </header>
 
-    <!--[if lte IE 9]>
+    <!--[if lte IE 8]>
   <style type="text/css">
-    .az-video-outer { min-height: 400px }
+    .az-title {
+      margin-top: 120px;
+    }
+  </style>
+<![endif]-->
+
+    <!--[if lte IE 7]>
+  <style type="text/css">
+    .az-video-outer iframe,
+    .az-video-outer html {
+      position: static;
+      width: 650px;
+      height: 325px;
+      padding-left: 75px;
+    }
+    .az-video-outer {
+      overflow: visible;
+      height: auto;
+      padding: 0;
+    }
   </style>
 <![endif]-->
     <h2 class="call-out az-title">See how our approach to software is helping AstraZeneca</h2>
@@ -60,11 +112,7 @@
       }
     </style>
     <div class="az-video-outer">
-      <canvas width="950" height="540" class="az-video-canvas"></canvas>
-      <video width="950" height="540" controls preload="none" class="az-video">
-        <source src="pebble-AZ-promo-small.mp4" type="video/mp4" />
-        <source src="pebble-AZ-promo-small.ogg" type="video/ogg" />
-      </video>
+      <iframe width="560" height="315" src="//www.youtube.com/embed/4hvbeQl2rb0" wmode="transparent" frameborder="0" allowfullscreen></iframe>
     </div>
     <footer class="site-footer">
       <ul>
