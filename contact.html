@@ -52,13 +52,13 @@
         <button class="nav-btn">Menu</button>
         <ul class="clear-fix">
           <li>
-            <a href="/work" class="nav-item" data-page="work">
-              <span>work</span> 
+            <a href="/about" class="nav-item" data-page="about">
+              <span>about</span> 
             </a> 
           </li>
           <li>
-            <a href="/people" class="nav-item" data-page="people">
-              <span>people</span> 
+            <a href="/work" class="nav-item" data-page="work">
+              <span>work</span> 
             </a> 
           </li>
           <li>
@@ -75,34 +75,53 @@
       </nav>
       <div class="site-menu"></div>
     </header>
-    <div id="map-canvas" style="width: 100%; height: 100%"></div>
-    <div class="address call-out tera">
-      <a href="https://maps.google.co.uk/maps?ie=UTF-8&amp;q=pebble+%7Bcode%7D&amp;fb=1&amp;gl=uk&amp;hq=pebble+code&amp;cid=12941888524356020266&amp;ei=S_nTUvGsLoSThQfupYCwDQ&amp;ved=0CJMBEPwSMA0">
+    <ul class="map-nav grid">
+      <li> <a class="london active">London</a>  </li>
+      <li> <a class="edinburgh">Edinburgh</a>  </li>
+      <li> <a class="newcastle">Newcastle</a>  </li>
+      <li> <a class="sofia">Sofia</a>  </li>
+    </ul>
+    <div id="map"></div>
+    <div class="map-addresses">
+
+      <!-- London -->
+      <a href="https://maps.google.com/maps?q=pebble+%7Bcode%7D,+Durham+Street,+London,+United+Kingdom&hl=en-US&ll=51.485632,-0.118747&spn=0.011264,0.024312&sll=51.485672,-0.118554&sspn=0.022528,0.048623&oq=pebble+code&t=m&z=16&iwloc=A" class="address call-out tera london-address"
+      target="_blank">
         <span>W214 Westminster Business Square</span> 
         <span>1-45 Durham Street</span> 
         <span>London</span> 
         <span>SE11 5JH</span> 
       </a> 
+
+      <!-- Edinburgh -->
+      <a href="https://www.google.co.uk/maps/place/pebble+%7Bcode%7D/@55.8959774,-3.296969,16z/data=!4m2!3m1!1s0x4887c406610c9aa1:0xa52499d7e0bc6a87" class="address call-out tera edinburgh-address" target="_blank">
+        <span>5 Blinkbonny Steading</span> 
+        <span>Currie</span> 
+        <span>Edinburgh</span> 
+        <span>EH14 6AE</span> 
+      </a> 
+
+      <!-- Newcastle -->
+      <a href="https://www.google.co.uk/maps/place/pebble+%7Bcode%7D/@55.0016746,-1.6156206,17z/data=!3m1!4b1!4m2!3m1!1s0x487e712c1871d20b:0x74f4416846c6a6c" class="address call-out tera newcastle-address" target="_blank">
+        <span>1 Moor Road South</span> 
+        <span>Newcastle upon Tyne</span> 
+        <span>NE3 1NN</span> 
+      </a> 
+
+      <!-- Sofia -->
+      <a href="https://www.google.co.uk/maps/place/pebble+%7Bcode%7D/@42.6742386,23.3543577,15z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" class="address call-out tera sofia-address" target="_blank">
+        <span>TechHuddle</span> 
+        <span>Business Center Tetrix</span> 
+        <span>23A Dragan Tsankov Blvd</span> 
+        <span>Sofia 1113, Bulgaria</span> 
+      </a> 
     </div>
-    <div class="phone-email call-out tera">
-      <a href="tel:+442033273940">+44 (0) 20 3327 3940</a> 
+    <div class="phone-email call-out alpha">
+      <a href="tel:+442033273940" class="phone">+44 (0) 20 3327 3940</a> 
       <a href="mailto:hello@pebblecode.com">hello@pebblecode.com</a> 
     </div>
     <script type="text/javascript">
       window.onload = function() {
-        var mapOptions = {
-          center: new google.maps.LatLng(51.485672, -0.118554),
-          zoom: 15,
-          scrollwheel: false,
-          disableDefaultUI: true
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-          mapOptions);
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(51.485672, -0.118554),
-          map: map,
-          title: "Hello World!"
-        });
         $('.site-footer').hide();
       }
     </script>
@@ -110,24 +129,9 @@
       <ul>
         <li> <a href="tel:+442033273940">+44 (0) 20 3327 3940</a>  </li>
         <li> <a href="mailto:hello@pebblecode.com">hello@pebblecode.com</a>  </li>
-        <li> <a class="find-us-link">Find Us</a>  </li>
+        <li> <a href="/contact">Find / Contact Us</a>  </li>
       </ul>
     </footer>
-    <div class="contact-panel">
-      <div id="map-canvas" style="width: 100%; height: 100%"></div>
-      <div class="address call-out">
-        <a href="https://maps.google.co.uk/maps?ie=UTF-8&amp;q=pebble+%7Bcode%7D&amp;fb=1&amp;gl=uk&amp;hq=pebble+code&amp;cid=12941888524356020266&amp;ei=S_nTUvGsLoSThQfupYCwDQ&amp;ved=0CJMBEPwSMA0">
-          <span>W214 Westminster Business Square</span> 
-          <span>1-45 Durham Street</span> 
-          <span>London</span> 
-          <span>SE11 5JH</span> 
-        </a> 
-      </div>
-      <div class="phone-email call-out">
-        <a href="tel:+442033273940">+44 (0) 20 3327 3940</a> 
-        <a href="mailto:hello@pebblecode.com">hello@pebblecode.com</a> 
-      </div>
-    </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
       window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
